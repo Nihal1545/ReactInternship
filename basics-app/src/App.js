@@ -1,25 +1,29 @@
-import React from 'react';
-//import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Person from './Person/Person';
 
-// function App()
-// {
-//   return(
-//     <div>
-//     <div className="App"
-//     <h1> Hello</h1>
-//     </div> 
-   
-//     <p>Hey!!!</p>
-//     </div>
-//   );
-// }
+class App extends Component {
+  return() {
+  return(
+    <div>
+    <div className="App">
+    <h1> Hello React </h1>
+    <Person></Person>
+    {/*importing in a different way */}
+    <Person/>
+    <Person/>
+    </div> 
+    <p>Hey!!!</p>
+    </div>
+  );
+}
+}
 
- function App() {
-   return React.createElement('div', null, 
-   React.createElement('div', {className: 'App'}, 
-   React.createElement('h1', null, 'Hello Reactjs!!!')),
-React.createElement('p', null, 'Hey!!!'));
- }
+//  function App() {
+//    return React.createElement('div', null, 
+//    React.createElement('div', {className: 'App'}, 
+//    React.createElement('h1', null, 'Hello Reactjs!!!')),
+// React.createElement('p', null, 'Hey!!!'));
+//  }
 
 export default App;
